@@ -1,0 +1,25 @@
+On *:Open:?:*: {
+  msg $nick Hei $nick $+ ! Akuratt nå er jeg opptatt så det kan hende jeg ikke svarer 
+  msg $nick På grunn av ScoutLink reglene, Snakker jeg kun i kanaler hvor alle kan være med og operatører kan overvåke. 
+  msg $nick Vist du trenger hjelp kan du joine hjelpe kanalen,(skriv: /join #help) - eller fortell meg hva du trenger hjelp med.
+  msg $nick Vist du bare vil snakke med noen: bruk kanalene til og snakke, ikke private meldinger (les https://www.scoutlink.net/rules/) 
+  ;msg $nick Hello $nick $+ ! I am currently busy and may not reply 
+  ;msg $nick Due to the ScoutLink rules, I only chat in channels where everyone can participate and operators can overview. 
+  ;msg $nick If you need help, join #help (type: /join #help) - or tell me what you need help with.
+  ;msg $nick If you just want to chat with someone: Use the channels to chat, not private messages (Read https://www.scoutlink.net/rules/) 
+
+}
+
+
+On *:TEXT:Hi:?: {
+  msg $nick Hello $nick . I normally dont reply to private messages. Try to talk in the channel, then more people can join in. Its more interesting.
+}
+On *:TEXT:Hello:?: {
+  msg $nick Hello $nick . I normally dont reply to private messages. Try to talk in the channel, then more people can join in. Its more interesting.
+}
+On *:TEXT:Hei:?: {
+  msg $nick Hei $nick . Svarer normalt sett ikke på private meldinger. Prøv å snakke i kanalen istedenfor. Da kan flere speidere bli med i samtalen og det er mer interessant.
+}
+On *:TEXT:Hallo:?: {
+  msg $nick Hei $nick . Svarer normalt sett ikke på private meldinger. Prøv å snakke i kanalen istedenfor. Da kan flere speidere bli med i samtalen og det er mer interessant.
+}
